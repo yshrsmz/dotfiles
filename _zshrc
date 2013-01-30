@@ -68,4 +68,4 @@ setopt hist_reduce_blanks
 setopt share_history
 
 ## prioritize homebrew
-export PATH=~/bin:/usr/local/bin:$PATH:/Users/shimizu_yasuhiro/android-sdk/platform-tools
+export PATH=/usr/local/bin:~/bin:$PATH:~/android-sdk/platform-tools
