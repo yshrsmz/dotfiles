@@ -1,1 +1,1 @@
-export PATH=$PATH:/Users/shimizu_yasuhiro/android-sdk/platform-tools:/Users/shimizu_yasuhiro/adobe_air_sdk/bin
+export PATH=/usr/local/bin:$PATH:~/android-sdk/platform-tools:~/adobe_air_sdk/bin
