@@ -7,8 +7,12 @@ my settings for terminal related apps
 1. install zsh(guessing you have installed homebrew)
 
         brew install zsh
-        
-2. change login shell
+
+2. install z.sh via homebrew
+
+        brew install z
+
+3. change login shell
 
         sudo sh -c "echo '/usr/local/bin/zsh' >> /etc/shells"
         chsh -s /usr/local/bin/zsh
