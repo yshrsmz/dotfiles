@@ -70,4 +70,4 @@ setopt share_history
 ## z.sh setting
 . `brew --prefix`/etc/profile.d/z.sh
 ## prioritize homebrew
-export PATH=/usr/local/bin:~/bin:$PATH:~/android-sdk/platform-tools:/usr/local/mysql/bin:~/.cabal/bin:/usr/local/share/npm/bin/
+export PATH=/usr/local/bin:~/bin:$PATH:~/android-sdk/platform-tools:/usr/local/mysql/bin:~/.cabal/bin:/usr/local/share/npm/bin
