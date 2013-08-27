@@ -257,4 +257,4 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 . `brew --prefix`/etc/profile.d/z.sh
 ## prioritize homebrew
 export GRADLE_HOME=/usr/local/Cellar/gradle/1.6
-export PATH=/usr/local/bin:~/bin:$PATH:~/android-sdk/platform-tools:/usr/local/mysql/bin:~/.cabal/bin:/usr/local/share/npm/bin/:$GRADLE_HOME/bin
+export PATH=/usr/local/bin:~/bin:$PATH:~/android-sdk/platform-tools:/usr/local/mysql/bin:~/.cabal/bin:/usr/local/share/npm/bin:$GRADLE_HOME/bin
