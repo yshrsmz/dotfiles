@@ -12,11 +12,15 @@ my settings for terminal related apps
 
         brew install z
 
-3. change login shell
+3. install tmux via homebrew
+
+        brew install tmux
+
+4. change login shell
 
         sudo sh -c "echo '/usr/local/bin/zsh' >> /etc/shells"
         chsh -s /usr/local/bin/zsh
-    
+
     if you are using Mac OS X, 
     
     1. go to system preference -> accounts pane.
