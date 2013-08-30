@@ -258,3 +258,8 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 ## prioritize homebrew
 export GRADLE_HOME=/usr/local/Cellar/gradle/1.6
 export PATH=/usr/local/bin:~/bin:$PATH:~/android-sdk/platform-tools:/usr/local/mysql/bin:~/.cabal/bin:/usr/local/share/npm/bin:$GRADLE_HOME/bin
+
+# tmuxinator setting
+export EDITOR=/usr/bin/vi
+export SHELL=/usr/local/bin/zsh
+[[ -s /Users/shimizu_yasuhiro/.tmuxinator/scripts/tmuxinator ]] && source /Users/shimizu_yasuhiro/.tmuxinator/scripts/tmuxinator
