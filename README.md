@@ -27,4 +27,17 @@ my settings for terminal related apps
     
     2. unlock -> right click on your user name and choose Advanced Options in contextual menu.
     
-    3. in the Advanced Options window, select `/usr/local/bin/zsh` (or type it!) in login shell input. 
+    3. in the Advanced Options window, select `/usr/local/bin/zsh` (or type it!) in login shell input.
+
+5. create symlinks
+
+    create symlink of files/directories of which first character is '_' in your user root directory. replace first '_' with '.'
+
+
+6. vim config
+
+    in `/dotfiles`, do as follows.
+
+        git submodule init
+        git submodule update
+        vim -c ':BundleInstall!' -c ':q!' -c ':q!'
