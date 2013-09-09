@@ -29,10 +29,11 @@ my settings for terminal related apps
     
     3. in the Advanced Options window, select `/usr/local/bin/zsh` (or type it!) in login shell input.
 
-5. create symlinks
+5. setup.sh 
 
-    create symlink of files/directories of which first character is '_' in your user root directory. replace first '_' with '.'
+    run following command to create symlinks and setup git submodules
 
+        sh setup.sh
 
 6. vim config
 
