@@ -15,8 +15,12 @@ my settings for terminal related apps
 3. install tmux via homebrew
 
         brew install tmux
+        
+4. install tmuxinator
+        
+        gem install tmuxinator
 
-4. change login shell
+5. change login shell
 
         sudo sh -c "echo '/usr/local/bin/zsh' >> /etc/shells"
         chsh -s /usr/local/bin/zsh
@@ -29,19 +33,19 @@ my settings for terminal related apps
     
     3. in the Advanced Options window, select `/usr/local/bin/zsh` (or type it!) in login shell input.
 
-5. setup.sh 
+6. setup.sh 
 
     run following command to create symlinks and setup git submodules
 
         sh setup.sh
 
-6. install font
+7. install font
 
     install ./misc/SourceCodePro-Regular-Powerline.otf
 
     set SourceCodePro-Regular-Powerline.oth as terminal default font.
 
-7. vim config
+8. vim config
 
     in `/dotfiles`, do as follows.
 
