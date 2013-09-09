@@ -1,11 +1,18 @@
 export LANG=ja_JP.UTF-8
 
+## prioritize homebrew
+export GRADLE_HOME=/usr/local/Cellar/gradle/1.6
+export PATH=/usr/local/bin:~/bin:$PATH:~/android-sdk/platform-tools:/usr/local/mysql/bin:~/.cabal/bin:/usr/local/share/npm/bin:$GRADLE_HOME/bin
+export EDITOR=/usr/bin/vim
+export SHELL=/usr/local/bin/zsh
+
 ## alias
 alias ls='ls -AFG'
 alias ll='ls -lFG'
 alias la='ls -lAFG'
 alias df='df -h'
 alias du='du -h'
+
 
 #lsに色付け
 export LSCOLORS=gxfxcxdxbxegedabagacad
@@ -321,14 +328,10 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 ## z.sh setting
 . `brew --prefix`/etc/profile.d/z.sh
 
-## prioritize homebrew
-export GRADLE_HOME=/usr/local/Cellar/gradle/1.6
-export PATH=/usr/local/bin:~/bin:$PATH:~/android-sdk/platform-tools:/usr/local/mysql/bin:~/.cabal/bin:/usr/local/share/npm/bin:$GRADLE_HOME/bin
-
 # tmuxinator setting
-export EDITOR=/usr/bin/vi
-export SHELL=/usr/local/bin/zsh
 [[ -s /Users/shimizu_yasuhiro/.tmuxinator/scripts/tmuxinator ]] && source /Users/shimizu_yasuhiro/.tmuxinator/scripts/tmuxinator
 
+setopt promptsubst
+
 # tmux-powerline setting
-#PROMPT='$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
+PROMPT+="\$([ -n \"\$TMUX\" ] && tmux setenv TMUXPWD_\$(tmux display -p \"#D\" | tr -d %) \"\$PWD\")"
