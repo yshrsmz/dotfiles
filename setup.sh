@@ -4,7 +4,7 @@ cd ${HOME}
 
 # create symbolic links
 ln -s ${HOME}/dotfiles/_vim ${HOME}/.vim
-ln -s ${HOME}/doftiles/_tmuxinator ${HOME}/.tmuxinator
+ln -s ${HOME}/dotfiles/_tmuxinator ${HOME}/.tmuxinator
 
 ln -s ${HOME}/dotfiles/_zshrc ${HOME}/.zshrc
 ln -s ${HOME}/dotfiles/_vimrc ${HOME}/.vimrc
