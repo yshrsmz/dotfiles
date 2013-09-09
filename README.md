@@ -35,7 +35,13 @@ my settings for terminal related apps
 
         sh setup.sh
 
-6. vim config
+6. install font
+
+    install ./misc/SourceCodePro-Regular-Powerline.otf
+
+    set SourceCodePro-Regular-Powerline.oth as terminal default font.
+
+7. vim config
 
     in `/dotfiles`, do as follows.
 
