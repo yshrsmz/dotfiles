@@ -3,21 +3,34 @@ set nocompatible
 " disable file type detection
 filetype off
 
+""""""""""""""""""""""""""""""""""""""""""
 " initialize Vundle,
 " and manage Vundle with Vundle itself
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle'
-Bundle 'altercation/vim-colors-solarized'
+"set rtp+=~/.vim/bundle/vundle/
+"call vundle#rc()
+"Bundle 'gmarik/vundle'
+"Bundle 'altercation/vim-colors-solarized'
 
 " plugins in github
 
 " vim-scripts plugin
 
 " plugins outside github
+""""""""""""""""""""""""""""""""""""""""""
+
+" initialize NeoBundle
+if has('vim_starting')
+    set runtimepath+=~/.vim/bundle/neobundle.vim
+    call neobundle#rc(expand('~/.vim/bundle/'))
+endif
+" originalrepos on github
+NeoBundle 'Shougo/neobundle.vim'
+NeoBundle 'Shougo/vimproc'
+NeoBundle 'altercation/vim-colors-solarized'
 
 "enable file type detection, plugins, indent
 filetype plugin indent on
+filetype indent on
 
 " for solarized colorscheme
 let g:solarized_termcolors=256
