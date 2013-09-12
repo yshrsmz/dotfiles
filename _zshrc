@@ -6,13 +6,16 @@ export PATH=/usr/local/bin:~/bin:$PATH:~/android-sdk/platform-tools:/usr/local/m
 export EDITOR=/usr/bin/vim
 export SHELL=/usr/local/bin/zsh
 
+# load OS specific settings
+[ -f $ZDOTDIR/.zshrc.`uname` ] && source $ZDOTDIR/.zshrc.`uname`
+
 ## alias
 alias ls='ls -AFG'
 alias ll='ls -lFG'
 alias la='ls -lAFG'
 alias df='df -h'
 alias du='du -h'
-
+alias tmux-copy='tmux save-buffer - | pbcopy'
 
 #lsに色付け
 export LSCOLORS=gxfxcxdxbxegedabagacad

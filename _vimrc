@@ -44,6 +44,11 @@ endif
 colorscheme solarized
 
 syntax on
+
+" use os clipboard
+set clipboard+=unnamed
+set clipboard+=autoselect
+
 " show line number
 set number
 " highlight correspondingbrackets for 0.3s
