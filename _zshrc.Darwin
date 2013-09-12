@@ -1,4 +1,4 @@
-## Mac specific settings for zshr
+## Mac specific settings for zsh
 
 # via: http://qiita.com/catatsuy/items/71b0f4932f00c6711ef5
 if [ -n "$TMUX" ]; then
