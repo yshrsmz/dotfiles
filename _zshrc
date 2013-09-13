@@ -15,6 +15,7 @@ alias ll='ls -lFG'
 alias la='ls -lAFG'
 alias df='df -h'
 alias du='du -h'
+alias oppai='git'
 alias tmux-copy='tmux save-buffer - | pbcopy'
 
 #lsに色付け
