@@ -17,3 +17,7 @@ cd ${HOME}/dotfiles
 
 git submodule init
 git submodule update
+
+# create file for zsh history
+mkdir ${HOME}/zsh/
+echo -n >> history
