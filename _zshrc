@@ -337,7 +337,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 . `brew --prefix`/etc/profile.d/z.sh
 
 # tmuxinator setting
-[[ -s /Users/shimizu_yasuhiro/.tmuxinator/scripts/tmuxinator ]] && source /Users/shimizu_yasuhiro/.tmuxinator/scripts/tmuxinator
+[[ -s ~/.tmuxinator/scripts/tmuxinator ]] && source ~/.tmuxinator/scripts/tmuxinator
 
 setopt promptsubst
 
