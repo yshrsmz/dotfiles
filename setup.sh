@@ -1,23 +1,64 @@
 #!/bin/sh
 
+if [ $# -eq 1 ]; then
+    DFDIR=$1
+else
+    DFDIR="${HOME}/dotfiles"
+fi
+
+echo "${DFDIR}"
+echo "${HOME}"
+
 cd ${HOME}
 
 # create symbolic links
-ln -s ${HOME}/dotfiles/_vim ${HOME}/.vim
-ln -s ${HOME}/dotfiles/_tmuxinator ${HOME}/.tmuxinator
+if [ -e ${HOME}/.vim ]; then
+    echo "${HOME}/.vim already exists."
+else
+    ln -s ${DFDIR}/_vim ${HOME}/.vim
+fi
 
-ln -s ${HOME}/dotfiles/_zshrc ${HOME}/.zshrc
-ln -s ${HOME}/dotfiles/_zshrc.Darwin ${HOME}/.zshrc.Darwin
-ln -s ${HOME}/dotfiles/_vimrc ${HOME}/.vimrc
-ln -s ${HOME}/dotfiles/_tmux.conf ${HOME}/.tmux.conf
-ln -s ${HOME}/dotfiles/_tmux-powerlinerc ${HOME}/.tmux-powerlinerc
+if [ -e ${HOME}/.tmuxinator ]; then
+    echo "${HOME}/.tmuxinator already exists."
+else
+    ln -s ${DFDIR}/_tmuxinator ${HOME}/.tmuxinator
+fi
+
+if [ -e ${HOME}/.zshrc ]; then
+    echo "${HOMEM}/.zshrc already exists."
+else
+    ln -s ${DFDIR}/_zshrc ${HOME}/.zshrC
+fi
+
+if [ -e ${HOME}/.zshrc.Darwin ]; then
+    echo "${HOME}/.zshrc.Darwin already exists."
+else
+    ln -s ${DFDIR}/_zshrc.Darwin ${HOME}/.zshrc.Darwin
+fi
+if [ -e ${HOME}/.vimrc ]; then
+    echo "${HOME}/.vimrc already exists."
+else
+    ln -s ${DFDIR}/_vimrc ${HOME}/.vimrc
+fi
+
+if [ -e ${HOME}/.tmux.conf ]; then
+    echo "${HOME}/.tmux.conf already exists."
+else
+    ln -s ${DFDIR}/_tmux.conf ${HOME}/.tmux.conf
+fi
+
+if [ -e ${HOME}/.tmux-powerlinerc ]; then
+    echo "${HOME}/.tmux-powerlinerc already exists."
+else
+    ln -s ${DFDIR}/_tmux-powerlinerc ${HOME}/.tmux-powerlinerc
+fi
 
 # set up git submodules
-cd ${HOME}/dotfiles
+cd ${DFDIR}
 
 git submodule init
 git submodule update
 
 # create file for zsh history
 mkdir ${HOME}/zsh/
-echo -n >> history
+echo -n >> ${HOME}/history
