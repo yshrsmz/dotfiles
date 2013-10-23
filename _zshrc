@@ -8,7 +8,7 @@ export LANG=ja_JP.UTF-8
 export GRADLE_HOME=/usr/local/Cellar/gradle/1.6
 export PATH=/usr/local/bin:~/bin:$PATH:~/android-sdk/platform-tools:/usr/local/mysql/bin:~/.cabal/bin:/usr/local/share/npm/bin:$GRADLE_HOME/bin
 export EDITOR=/usr/bin/vim
-export SHELL=/usr/local/bin/zsh
+export SHELL=$(brew --prefix)/bin/zsh
 
 # load OS specific settings
 [ -f $ZDOTDIR/.zshrc.`uname` ] && source $ZDOTDIR/.zshrc.`uname`
