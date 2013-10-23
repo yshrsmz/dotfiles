@@ -27,7 +27,7 @@ fi
 if [ -e ${HOME}/.zshrc ]; then
     echo "${HOMEM}/.zshrc already exists."
 else
-    ln -s ${DFDIR}/_zshrc ${HOME}/.zshrC
+    ln -s ${DFDIR}/_zshrc ${HOME}/.zshrc
 fi
 
 if [ -e ${HOME}/.zshrc.Darwin ]; then
