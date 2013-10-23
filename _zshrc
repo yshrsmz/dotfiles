@@ -1,5 +1,9 @@
 export LANG=ja_JP.UTF-8
 
+## add boxes setting
+[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
+[ -f /opt/boxen/nvm/nvm.sh ] && source /opt/boxen/nvm/nvm.sh
+
 ## prioritize homebrew
 export GRADLE_HOME=/usr/local/Cellar/gradle/1.6
 export PATH=/usr/local/bin:~/bin:$PATH:~/android-sdk/platform-tools:/usr/local/mysql/bin:~/.cabal/bin:/usr/local/share/npm/bin:$GRADLE_HOME/bin
