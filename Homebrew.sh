@@ -10,3 +10,4 @@ brew install z
 brew install tree
 brew install tmux
 brew install reattach-to-user-namespace
+brew install tig
