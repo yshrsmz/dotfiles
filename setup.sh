@@ -60,5 +60,5 @@ git submodule init
 git submodule update
 
 # create file for zsh history
-mkdir ${HOME}/zsh/
+mkdir ${HOME}/.zsh/
 echo -n >> ${HOME}/history

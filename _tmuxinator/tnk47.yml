@@ -21,7 +21,7 @@ windows:
         panes:
             - ls
             - z jscss && grunt watch
-            - sass --scss --watch --trace --line-numbers /Users/shimizu_yasuhiro/Documents/repositories/ameba_sg_tnk47/tnk47_jscss/scss:/Users/shimizu_yasuhiro/Documents/repositories/ameba_sg_tnk47/tnk47_jscss/css_uncompressed
+            - sass --scss --watch --trace --line-numbers ~/Documents/repositories/ameba_sg_tnk47/tnk47_jscss/scss:~/Documents/repositories/ameba_sg_tnk47/tnk47_jscss/css_uncompressed
     - vagrant:
         layout: ce15,364x84,0,0{182x84,0,0,0,181x84,183,0[181x42,183,0,1,181x41,183,43,2]}
         panes:

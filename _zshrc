@@ -9,6 +9,7 @@ export GRADLE_HOME=$(brew --prefix)/Cellar/gradle/1.6
 export PATH=$(brew --prefix)/bin:~/bin:$PATH:~/android-sdk/platform-tools:$(brew --prefix)/mysql/bin:~/.cabal/bin:$(brew --prefix)/share/npm/bin:$GRADLE_HOME/bin
 export EDITOR=/usr/bin/vim
 export SHELL=$(brew --prefix)/bin/zsh
+export ANT_OPTS=-Dfile.encoding=UTF8
 
 # load OS specific settings
 [ -f $ZDOTDIR/.zshrc.`uname` ] && source $ZDOTDIR/.zshrc.`uname`
