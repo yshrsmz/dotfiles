@@ -16,17 +16,17 @@ root: ~/
 # tmux_options: -f ~/.tmux.mac.conf
 
 windows:
-    - editor:
+    - tnk47_web:
         layout: ce15,364x84,0,0{182x84,0,0,0,181x84,183,0[181x42,183,0,1,181x41,183,43,2]}
         panes:
             - ls
-            - z jscss && grunt watch
-            - z jscss && sass --scss --watch --trace --line-numbers scss:css_uncompressed
-    - vagrant:
+            - z amsg_tnk47/tnk47
+            - z amsg_tnk47/tnk47
+    - tnk47_jscss:
         layout: ce15,364x84,0,0{182x84,0,0,0,181x84,183,0[181x42,183,0,1,181x41,183,43,2]}
         panes:
-            - z chef_tnk47/server && ls
-            - z chef_tnk47/server && ls
-            - z chef_tnk47/server && ls
+            - z amsg_tnk47/tnk47_jscss
+            - z amsg_tnk47/tnk47_jscss && ulimit -n 10000 && grunt watch
+            - z amsg_tnk47/tnk47_jscss && sass --scss --watch --trace --line-numbers scss:css_uncompressed
 #  - server: bundle exec rails s
 #  - logs: tail -f logs/development.log
