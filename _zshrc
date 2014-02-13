@@ -15,6 +15,9 @@ export ANT_OPTS=-Dfile.encoding=UTF8
 # Set the environment variable for the docker daemon
 export DOCKER_HOST=tcp://
 
+# Packer PATH
+export PATH=~/packer:$PATH
+
 # load OS specific settings
 [ -f $ZDOTDIR/.zshrc.`uname` ] && source $ZDOTDIR/.zshrc.`uname`
 
