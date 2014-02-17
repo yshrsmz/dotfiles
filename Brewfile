@@ -2,6 +2,10 @@ update
 
 upgrade
 
+# install homebrew-cask
+tap phinze/homebrew-cask
+install brew-cask
+
 tap homebrew/versions
 tap thoughtbot/formulae
 
@@ -24,3 +28,8 @@ install subversion17
 
 # install from thoughtbot/formulae
 install gitsh
+
+# install launchrocket
+# https://github.com/jimbojsb/launchrocket
+tap jimbojsb/launchrocket
+cask install launchrocket
