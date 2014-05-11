@@ -2,6 +2,8 @@ update
 
 upgrade
 
+cleanup
+
 # install homebrew-cask
 tap phinze/homebrew-cask
 install brew-cask
@@ -9,7 +11,7 @@ install brew-cask
 tap homebrew/versions
 tap thoughtbot/formulae
 
-install apple-gcc42
+#install apple-gcc42
 install imagemagick
 install node
 install readline
@@ -33,3 +35,9 @@ install gitsh
 # https://github.com/jimbojsb/launchrocket
 tap jimbojsb/launchrocket
 cask install launchrocket
+
+cask install Filezilla
+cask install Imageoptim
+cask install Imagealpha
+cask install Mou
+cask install lightpaper

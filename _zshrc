@@ -6,7 +6,7 @@ export LANG=ja_JP.UTF-8
 
 ## prioritize homebrew
 export PATH=/usr/local/bin:$PATH
-export GRADLE_HOME=$(brew --prefix)/Cellar/gradle/1.6
+export GRADLE_HOME=$(brew --prefix)/Cellar/gradle/1.12
 export PATH=$(brew --prefix)/bin:~/bin:$PATH:~/android-sdk/platform-tools:$(brew --prefix)/mysql/bin:~/.cabal/bin:$(brew --prefix)/share/npm/bin:$GRADLE_HOME/bin
 export EDITOR=/usr/bin/vim
 export SHELL=$(brew --prefix)/bin/zsh
