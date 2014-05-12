@@ -1,6 +1,7 @@
-# ~/.tmuxinator/tnk47_workspace.yml
+# ~/.tmuxinator/tnk47.yml
 
-name: tnk47_workspace
+name: tnk47
+# https://github.com/tmuxinator/tmuxinator/issues/170
 root: ~/
 
 # Optional tmux socket
