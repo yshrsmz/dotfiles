@@ -5,11 +5,12 @@ upgrade
 cleanup
 
 # install homebrew-cask
-tap phinze/homebrew-cask
+tap caskroom/cask
 install brew-cask
 
 tap homebrew/versions
 tap thoughtbot/formulae
+tap homebrew/binary
 
 #install apple-gcc42
 install imagemagick
@@ -30,6 +31,10 @@ install subversion17
 
 # install from thoughtbot/formulae
 install gitsh
+
+# install from homebrew/binary
+install jad
+install dex2jar
 
 # install launchrocket
 # https://github.com/jimbojsb/launchrocket

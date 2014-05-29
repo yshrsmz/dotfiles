@@ -320,6 +320,23 @@ function _update_vcs_info_msg() {
 }
 add-zsh-hook precmd _update_vcs_info_msg
 
+### 一発でAndroidアプリをリバースエンジニアリングする
+# http://qiita.com/GeneralD/items/a4af8d1ac2b13a8c0bc8
+# Decompile Java classes recursiely keeping hierarchy
+jadr() {
+    jad -8 -s java -d $2 -r $1/**/*.class
+}
+
+# Decompile Android application
+deapk() {
+    local dst=${${1##*/}%%.*}
+    dst+='.depackaged'
+    unzip $1 -d $dst
+    dex2jar ${dst}/classes.dex
+    unzip ${dst}/classes_dex2jar.jar -d ${dst}/Classes
+    jadr ${dst} ${dst}/src
+}
+
 ## options
 setopt BASH_AUTO_LIST
 setopt LIST_AMBIGUOUS
