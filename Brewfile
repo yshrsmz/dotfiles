@@ -13,6 +13,11 @@ tap thoughtbot/formulae
 tap homebrew/binary
 
 #install apple-gcc42
+install gcc
+install ios-sim
+install groovy
+install gradle
+install pandoc
 install imagemagick
 install node
 install readline
@@ -25,6 +30,7 @@ install ruby-build
 install rbenv
 install tig
 install tmux
+install reattach-to-user-namespace
 
 # install from homebrew/versions
 install subversion17
