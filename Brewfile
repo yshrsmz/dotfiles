@@ -47,6 +47,16 @@ install dex2jar
 tap jimbojsb/launchrocket
 cask install launchrocket
 
+cask install sublime-text
+cask install charles
+cask install alfred
+cask install dropbox
+cask install teleport
+cask install bettertouchtool
+cask install onepassword
+cask install iterm2
+cask install path-finder
+cask install intellij-idea
 cask install Filezilla
 cask install Imageoptim
 cask install Imagealpha
