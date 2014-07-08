@@ -4,10 +4,6 @@ upgrade
 
 cleanup
 
-# install homebrew-cask
-tap caskroom/cask
-install brew-cask
-
 tap homebrew/versions
 tap thoughtbot/formulae
 tap homebrew/binary
@@ -42,6 +38,14 @@ install gitsh
 install jad
 install dex2jar
 
+#install peco
+tap peco/peco
+install peco
+
+# install homebrew-cask
+tap caskroom/cask
+install brew-cask
+
 # install launchrocket
 # https://github.com/jimbojsb/launchrocket
 tap jimbojsb/launchrocket
@@ -62,3 +66,5 @@ cask install Imageoptim
 cask install Imagealpha
 cask install Mou
 cask install lightpaper
+cask install appcleaner
+cask install skype

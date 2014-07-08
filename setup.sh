@@ -53,6 +53,12 @@ else
     ln -s ${DFDIR}/_tmux-powerlinerc ${HOME}/.tmux-powerlinerc
 fi
 
+if [ -e ${HOME}/.peco ]; then
+    echo "${HOME}/.peco already exists."
+else
+    ln -s ${DFDIR}/_peco ${HOME}/.peco
+fi
+
 # set up git submodules
 cd ${DFDIR}
 
