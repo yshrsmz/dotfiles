@@ -51,4 +51,4 @@ my settings for terminal related apps
 
         git submodule init
         git submodule update
-        vim -c ':BundleInstall!' -c ':q!' -c ':q!'
+        vim -c ':NeoBundleInstall!' -c ':q!' -c ':q!'
