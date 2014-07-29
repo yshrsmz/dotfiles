@@ -27,6 +27,8 @@ install rbenv
 install tig
 install tmux
 install reattach-to-user-namespace
+install mercurial
+install go
 
 # install from homebrew/versions
 install subversion17

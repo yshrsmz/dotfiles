@@ -59,6 +59,18 @@ else
     ln -s ${DFDIR}/_peco ${HOME}/.peco
 fi
 
+if [ -e ${HOME}/go ]; then
+    echo "${HOME}/go already exists."
+else
+    mkdir ${HOME}/go
+fi
+
+if [ -e /etc/launchd.conf ]; then
+    echo "/etc/launchd.conf already exists."
+else
+    sudo ln -s ${DFDIR}/launchd.conf /etc/launchd.conf
+fi
+
 # set up git submodules
 cd ${DFDIR}
 
