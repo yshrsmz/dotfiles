@@ -2,3 +2,5 @@
 /_vim/.netrwhist
 Gemfile.lock
 launchd.conf
+vendor/
+.bundle
