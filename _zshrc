@@ -7,8 +7,10 @@ export LANG=ja_JP.UTF-8
 ## prioritize homebrew
 export PATH=/usr/local/bin:$PATH
 
-export GRADLE_HOME=$(brew --prefix)/Cellar/gradle/1.12
+export GRADLE_HOME=$(brew --prefix)/Cellar/gradle/2.0
 export GOPATH=~/go
+
+export ANDROID_HOME=~/android-sdk
 
 export PATH=$(brew --prefix)/bin:$PATH
 export PATH=~/bin:$PATH:
