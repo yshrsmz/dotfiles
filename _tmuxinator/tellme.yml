@@ -21,13 +21,13 @@ windows:
         layout: ce15,364x84,0,0{182x84,0,0,0,181x84,183,0[181x42,183,0,1,181x41,183,43,2]}
         panes:
             - cd ~ && ls
-            - cd ~/repos/tellme
+            - cd ~/repos/tellme/tellme-android2
             - cd ~/repos/tellme
     - tellme_web:
         layout: ce15,364x84,0,0{182x84,0,0,0,181x84,183,0[181x42,183,0,1,181x41,183,43,2]}
         panes:
             - cd ~ && ls
-            - cd ~/repos/tellme
+            - cd ~/repos/tellme/rio
             - cd ~/repos/tellme
 #  - server: bundle exec rails s
 #  - logs: tail -f logs/development.log
