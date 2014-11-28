@@ -21,16 +21,22 @@ filetype off
 " initialize NeoBundle
 if has('vim_starting')
     set runtimepath+=~/.vim/bundle/neobundle.vim
-    call neobundle#rc(expand('~/.vim/bundle/'))
 endif
+
+call neobundle#begin(expand('~/.vim/bundle/'))
+
 " originalrepos on github
 NeoBundle 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/vimproc'
 NeoBundle 'altercation/vim-colors-solarized'
 
+call neobundle#end()
+
 "enable file type detection, plugins, indent
 filetype plugin indent on
 filetype indent on
+
+NeoBundleCheck
 
 " for solarized colorscheme
 let g:solarized_termcolors=256
