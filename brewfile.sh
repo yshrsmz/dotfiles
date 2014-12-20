@@ -14,7 +14,7 @@ brew tap jimbojsb/launchrocket
 brew install gcc
 brew install ios-sim
 brew install groovy
-brew install gradle
+#brew install gradle
 brew install pandoc
 brew install imagemagick
 brew install node
@@ -29,17 +29,17 @@ brew install ruby-build
 brew install rbenv
 brew install tmux
 brew install reattach-to-user-namespace
-brew install mercurial
+#brew install mercurial
 brew install go
 brew install ansible
 brew install docker
 brew install boot2docker
 
 # install from homebrew/versions
-brew install subversion17
+#brew install subversion17
 
 # install from thoughtbot/formulae
-brew install gitsh
+#brew install gitsh
 
 # install from homebrew/binary
 brew install jad
@@ -55,19 +55,21 @@ brew install brew-cask
 brew cask install launchrocket
 
 # install via homebrew cask
-brew cask install sublime-text
+#brew cask install sublime-text
+brew cask install atom
 brew cask install charles
 brew cask install alfred
 brew cask install dropbox
 brew cask install teleport
 brew cask install bettertouchtool
-brew cask install onepassword
+brew cask install 1password
 brew cask install iterm2
 brew cask install path-finder
 brew cask install intellij-idea
-brew cask install Filezilla
-brew cask install Imageoptim
-brew cask install Imagealpha
-brew cask install Mou
+brew cask install filezilla
+brew cask install imageoptim
+brew cask install imagealpha
+brew cask install mou
 brew cask install appcleaner
 brew cask install skype
+brew cask install android-studio
