@@ -10,6 +10,7 @@ brew tap homebrew/binary
 brew tap caskroom/cask
 brew tap peco/peco
 brew tap jimbojsb/launchrocket
+brew tap sanemat/font
 
 brew install gcc
 brew install ios-sim
@@ -34,6 +35,10 @@ brew install go
 brew install ansible
 brew install docker
 brew install boot2docker
+brew install python
+
+# install font for powerline
+brew reinstall --powerline --vim-powerline ricty
 
 # install from homebrew/versions
 #brew install subversion17

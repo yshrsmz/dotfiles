@@ -47,11 +47,23 @@ else
     ln -s ${DFDIR}/_tmux.conf ${HOME}/.tmux.conf
 fi
 
-if [ -e ${HOME}/.tmux-powerlinerc ]; then
-    echo "${HOME}/.tmux-powerlinerc already exists."
+if [ -e ${HOME}/.config ]; then
+    echo "${HOME}/.config already exists."
 else
-    ln -s ${DFDIR}/_tmux-powerlinerc ${HOME}/.tmux-powerlinerc
+    mkdir ${HOME}/.config
 fi
+
+if [ -e ${HOME}/.config/powerline ]; then
+    echo "${HOME}/.config/powerline already exists."
+else
+    ln -s ${DFDIR}/_config/powerline ${HOME}/.config/powerline
+fi
+
+#if [ -e ${HOME}/.tmux-powerlinerc ]; then
+#    echo "${HOME}/.tmux-powerlinerc already exists."
+#else
+#    ln -s ${DFDIR}/_tmux-powerlinerc ${HOME}/.tmux-powerlinerc
+#fi
 
 if [ -e ${HOME}/.peco ]; then
     echo "${HOME}/.peco already exists."
