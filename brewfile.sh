@@ -36,6 +36,8 @@ brew install ansible
 brew install docker
 brew install boot2docker
 brew install python
+brew install libgit2
+brew install automake
 
 # install font for powerline
 brew reinstall --powerline --vim-powerline ricty

@@ -1,0 +1,42 @@
+{
+    "segment_data": {
+        "hostname": {
+            "args": {
+                "only_if_ssh": true
+            }
+        },
+        "date": {
+            "before": "⌚  "
+        },
+        "internal_ip": {
+            "before": "ⓛ "
+        },
+        "external_ip": {
+            "before": "ⓦ "
+        }
+    },
+    "segments": {
+        "left": [
+            {
+                "function": "powerline.segments.common.net.hostname"
+            }
+        ],
+        "right": [
+            {
+                "function": "powerline.segments.common.net.external_ip"
+            },
+            {
+                "function": "powerline.segments.common.net.internal_ip",
+                "args": {
+                    "interface": "en0"
+                }
+            },
+            {
+                "function": "powerline.segments.common.time.date",
+                "args": {
+                    "format": "%-m/%-d/(%a) %H:%M"
+                }
+            }
+        ]
+    }
+}

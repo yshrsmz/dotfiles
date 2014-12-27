@@ -56,7 +56,8 @@ my settings for terminal related apps
 9. install powerline
 
 ```
-brew install python
 pip install psutil
+pip install pygit2
+pip install netifaces
 pip install git+git://github.com/Lokaltog/powerline
 ```
