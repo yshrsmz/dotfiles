@@ -7,6 +7,7 @@ export GRADLE_HOME=$(brew --prefix)/Cellar/gradle/2.2.1
 export GOPATH=~/go
 
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
+export GRIFFON_HOME=/usr/local/Cellar/griffon/1.5.0/libexec
 
 export ANDROID_HOME=~/android-sdk
 

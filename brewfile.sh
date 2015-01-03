@@ -15,7 +15,8 @@ brew tap sanemat/font
 brew install gcc
 brew install ios-sim
 brew install groovy
-#brew install gradle
+brew install gradle
+brew install griffon
 brew install pandoc
 brew install imagemagick
 brew install node
@@ -38,9 +39,6 @@ brew install boot2docker
 brew install python
 brew install libgit2
 brew install automake
-
-# install font for powerline
-brew reinstall --powerline --vim-powerline ricty
 
 # install from homebrew/versions
 #brew install subversion17
