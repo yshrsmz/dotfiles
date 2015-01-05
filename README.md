@@ -7,6 +7,7 @@ my settings for terminal related apps
 1. install zsh(guessing you have installed homebrew)
 
         brew install zsh
+        xcode-select --install # install xcode commandline tools
 
 2. install z.sh via homebrew
 
