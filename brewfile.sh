@@ -8,7 +8,7 @@ brew tap homebrew/versions
 brew tap thoughtbot/formulae
 brew tap homebrew/binary
 brew tap caskroom/cask
-brew tap peco/peco
+#brew tap peco/peco
 brew tap jimbojsb/launchrocket
 brew tap sanemat/font
 
