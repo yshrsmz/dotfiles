@@ -8,7 +8,7 @@ brew tap homebrew/versions
 brew tap thoughtbot/formulae
 brew tap homebrew/binary
 brew tap caskroom/cask
-brew tap peco/peco
+#brew tap peco/peco
 brew tap jimbojsb/launchrocket
 brew tap sanemat/font
 
@@ -37,7 +37,7 @@ brew install ansible
 brew install docker
 brew install boot2docker
 brew install python
-brew install libgit2
+brew install libgit2 --with-libssh2
 brew install automake
 
 # install from homebrew/versions
