@@ -29,6 +29,9 @@ export EDITOR=/usr/bin/vim
 export SHELL=$(brew --prefix)/bin/zsh
 export ANT_OPTS=-Dfile.encoding=UTF8
 
+# set homebrew api token if available
+[ -f ~/.brew_api_token ] && source ~/.brew_api_token
+
 # Packer PATH
 export PATH=~/packer:$PATH
 
