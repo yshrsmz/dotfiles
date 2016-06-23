@@ -10,6 +10,7 @@ export GROOVY_HOME=/usr/local/opt/groovy/libexec
 export GRIFFON_HOME=/usr/local/Cellar/griffon/1.5.0/libexec
 
 export ANDROID_HOME=~/android-sdk
+export ANDROID_HVPROTO=ddm
 
 export PATH=$(brew --prefix)/bin:$PATH
 export PATH=~/bin:$PATH:
@@ -24,6 +25,7 @@ export PATH=$HOME/.rbenv/shims:$PATH
 export PATH=$HOME/dotfiles/apktool:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/.nodebrew/current/bin:$PATH
+
 
 export EDITOR=/usr/bin/vim
 export SHELL=$(brew --prefix)/bin/zsh
