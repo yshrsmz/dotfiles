@@ -139,7 +139,7 @@ deapk() {
     local dst=${${1##*/}%%.*}
     dst+='.depackaged'
     unzip $1 -d $dst
-    dex2jar ${dst}/classes.dex
+    d2j-dex2jar ${dst}/classes.dex
     unzip ${dst}/classes_dex2jar.jar -d ${dst}/Classes
     jadr ${dst} ${dst}/src
 }
