@@ -19,7 +19,8 @@ brew install gradle
 brew install griffon
 brew install pandoc
 brew install imagemagick
-brew install node
+#brew install node
+brew install nodebrew
 brew install readline
 brew install git
 brew install tig
