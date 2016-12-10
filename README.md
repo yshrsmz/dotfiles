@@ -60,5 +60,5 @@ my settings for terminal related apps
 pip install psutil
 pip install pygit2
 pip install netifaces
-pip install git+git://github.com/Lokaltog/powerline
+pip install powerline-status
 ```
